@@ -23,7 +23,7 @@ public class Main {
 		//ディレクトリがなければ作る
 		File file = new java.io.File(USERPROFILE + "\\Downloads\\out_temp\\test.properties");
 		file.mkdirs();
-		if (file.canExecute())
+		if (file.exists())
 			file.delete();
 		
 		try {
